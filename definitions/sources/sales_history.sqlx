@@ -1,0 +1,7 @@
+config {
+    type: "declaration",
+    database: "projct-id",
+    schema: "bq_sales_dataset",
+    name: "sales_history_table",
+    description: "Sales history table"
+}

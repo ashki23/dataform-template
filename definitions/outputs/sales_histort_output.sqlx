@@ -1,0 +1,9 @@
+config {
+    type: "table",
+    description : "Final result"
+}
+
+SELECT
+   *
+FROM
+  ${ref("sales_history_filter")}

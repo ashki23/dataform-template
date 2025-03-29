@@ -1,0 +1,11 @@
+config {
+    type: "view",
+    description: "Filtering the country code with null region"
+}
+
+SELECT
+   *
+FROM
+   ${ref("sales_history")}
+WHERE
+   country_code IS NOT NULL
