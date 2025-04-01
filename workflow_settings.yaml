@@ -1,5 +1,5 @@
 defaultProject: <project-id>
-defaultLocation: US
 defaultDataset: <dataset-name>
+defaultLocation: US
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.0
