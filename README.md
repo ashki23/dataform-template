@@ -18,8 +18,8 @@ The following shows the repository structure:
 The `workflow_settings.yaml` file, introduced in Dataform core 3.0, stores Dataform workflow settings in the YAML format. The following code shows a sample `workflow_settings.yaml` file:
 
 ```yml
-defaultProject: my-gcp-project-id
-defaultDataset: dataform
+defaultProject: <gcp-project-id>
+defaultDataset: <dataset-name>
 defaultLocation: US
 defaultAssertionDataset: dataform_assertions
 ```
@@ -79,7 +79,7 @@ A SQLX file consists of a config block and a body. All config properties, and th
 
   - `database`: the project ID of the project which contains the data source.
   - `schema`: the BigQuery dataset in which the data source exists.
-  - `name`: the name of the table or view that you want to use as the data source. You can later use that name to reference the data source in Dataform.
+  - `name`: the name of the table or view that you want to use as the data source. **You can later use that name to reference the data source in Dataform.**
 
 - [Create tables](https://cloud.google.com/dataform/docs/create-tables), for example:
 
@@ -119,3 +119,4 @@ GROUP BY 1, 2, 3
 - [Recommended structure of the definitions directory](https://cloud.google.com/dataform/docs/structure-repositories)
 - [SQLX file config block](https://cloud.google.com/dataform/docs/overview#sqlx_file_config_block)
 - [SQLX file body](https://cloud.google.com/dataform/docs/overview#sqlx_file_body)
+- [Connect to a third-party Git repository](https://cloud.google.com/dataform/docs/connect-repository#github)
